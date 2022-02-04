@@ -8,8 +8,9 @@
 
 - Поле заголовков
 Слайды строятся от колличества заголовков, 
-заголовки разделяются точками с запятой, последний заголовок разделять не требуется.
-![1](blob:https://web.telegram.org/6c9a23c3-a5c9-4650-8f21-1105df185629 "1")
+заголовки разделяются точками с запятой,
+последний заголовок разделять не требуется.
+![1](https://sun9-86.userapi.com/impg/n1wcd-1tHTezMzVWpECeCijKnUFzO74CX9vWUQ/Lnydz0DBNHI.jpg?size=877x120&quality=96&sign=75bb6b27c0717e5949bc9f7fdd8ee5c1&type=album "1")
 
 Примеры
 Обычный заголовок: `Пример`
@@ -19,16 +20,17 @@
 - Текст
 1 Предложение вставляется в 1 слайд,
 предложения разделяются точкой.
-![2](blob:https://web.telegram.org/786b19e5-0089-4f51-93d7-c43d5edfa049 "2")
+![2](https://sun9-29.userapi.com/impg/SPHzC1g0Y9PM3C_dAnn_2-k7UxrsCBKpbffuxw/oWrWlz1vX5c.jpg?size=982x216&quality=96&sign=9afe1b67d24a668c8d6ec46a2761b2b0&type=album "2")
 
 Примеры
 Обычное предложение: `Nearly all Markdown applications support the basic syntax outlined in the original Markdown design document.`
 2 Предложения: `Nearly all Markdown applications support the basic syntax outlined in the original Markdown design document. There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.`
 
 - Изображения
-Для вставки изображения используется url, на каждом слайде обязательное нахождение изображения
+Для вставки изображения используется url,
+на каждом слайде обязательное нахождение изображения
 советую использовать короткие url, url-ы разделяются точками с запятой.
-![3](blob:https://web.telegram.org/052d20c1-9cd6-4a5c-bc5f-6860cc96719a "3")
+![3](https://sun9-4.userapi.com/impg/FckHsXQqHtp0ezc2hI4YAV5dnQCU0i5Em9iW2Q/FD-R78Q4oFg.jpg?size=927x213&quality=96&sign=8d8bd6e3ffb12d34d29072550f2d0426&type=album "3")
 
 Примеры
 Одно изображение `https://example.ru/one.jpg`
