@@ -7,6 +7,8 @@
 const pptxFactory = require('./lib/pptxFactory.js');
 const separatorHandle = require('./lib/separatorHandle.js');
 
+const fsPromises = require('fs/promises');
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const jsonParser = express.json();
@@ -29,9 +31,8 @@ app.post('/request', jsonParser, function (request, response) {
     let textForm = request.body.textsList;
     let urlsForm = request.body.urlsList;
 
-    separatorHandle.separateElement(headersForm, textForm, urlsForm, response)
-    // .then((json) => pptxFactory.get(json, response))
-    // .catch((error) => console.log(error));
+    let data = separatorHandle.separateElement(headersForm, textForm, urlsForm, response);
+    pptxFactory.get(data);
 
 });
 
