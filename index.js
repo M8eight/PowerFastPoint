@@ -7,8 +7,6 @@
 const pptxFactory = require('./lib/pptxFactory.js');
 const separatorHandle = require('./lib/separatorHandle.js');
 
-const fsPromises = require('fs/promises');
-const fs = require('fs');
 const express = require('express');
 const app = express();
 const jsonParser = express.json();
