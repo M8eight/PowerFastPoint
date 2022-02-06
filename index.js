@@ -2,36 +2,41 @@
  *PowerPointCreator
  *By: m8eight
  *MIT Licensed
- */
-
-const pptxFactory = require('./lib/pptxFactory.js');
-const separatorHandle = require('./lib/separatorHandle.js');
+*/
 
 const express = require('express');
 const app = express();
 const jsonParser = express.json();
+var pptxFactory = require('./lib/pptxFactory.js');
+var fileVerification = require('./lib/fileVerification.js');
+
 
 app.use(express.static('./public'));
 
-
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + './public/index.html');
+app.get('/', function (request, response) {
+    response.sendFile(__dirname + './public/index.html');
 });
 
 app.post('/request', jsonParser, function (request, response) {
-
-    if (!request.body) return response.json({
-        'success': 'false',
-        'error': 'No request'
+    if (!request.body) return response.send({
+        condition: 'No request'
     });
 
-    let headersForm = request.body.headersList;
-    let textForm = request.body.textsList;
-    let urlsForm = request.body.urlsList;
+    let jsonRequest = request.body;
+    let pptxPath = './storage/app.pptx';
+    
+    fileVerification.ifExistsDelete(pptxPath);
 
-    let data = separatorHandle.separateElement(headersForm, textForm, urlsForm, response);
-    pptxFactory.get(data);
+    /* DEBUG */
+    // console.log('index: ');
+    // console.dir(request.body);
 
+    pptxFactory.get(jsonRequest, response);
+});
+
+app.get('/download', function (request, response) {
+    const filePath = './storage/app.pptx';
+    response.download(filePath);
 });
 
 app.listen(3000, function () {

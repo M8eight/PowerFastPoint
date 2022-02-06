@@ -1,47 +1,45 @@
 # PowerFastPoint
 # Быстрый создатель презентаций на node.js
+#### Интерфейс прост и понятен но есть пояснение
 -------------
-### Версия 0.1
-Запустите командную строку и напишите команду **node index**
-В браузере перейдите по адрессу **127.0.0.1:3000**
-Кратко о синтаксисе
+### Версия 2.0.0
+Если у вас Windows:
+- Запустите файл Start.bat
+#### Или
+Более долгий путь:
+- Запустите командную строку и напишите команду **node index**
+    В браузере перейдите по адрессу **127.0.0.1:3000**
 
-Поле заголовков
-- Слайды строятся от колличества заголовков, 
-заголовки разделяются точками с запятой,
-последний заголовок разделять не требуется.
 
-![1](https://sun9-86.userapi.com/impg/n1wcd-1tHTezMzVWpECeCijKnUFzO74CX9vWUQ/Lnydz0DBNHI.jpg?size=877x120&quality=96&sign=75bb6b27c0717e5949bc9f7fdd8ee5c1&type=album "1")
+##### Изначально создано 1 поле для создания слайда. 1 Поле = 1 слайд
+![1](https://sun9-73.userapi.com/impg/PpsFhTgqs3-uHGCn1J9S_MrbmkVZ3Z8ZAqCZnw/q24tORwr1po.jpg?size=1280x371&quality=96&sign=13db1945b2dce796c6084962b3a807af&type=album "1")
 
-- Примеры:
-    - Обычный заголовок: `Пример`.
-    - 2 Заголовка: `Один; Два`.
-    - 1 Заголовок 1 Пустой 1 Заголовок: `Заголовок; ; Заголовок`.
 
-Текст:
-- Предложение вставляется в 1 слайд,
-предложения разделяются точкой.
 
-![2](https://sun9-29.userapi.com/impg/SPHzC1g0Y9PM3C_dAnn_2-k7UxrsCBKpbffuxw/oWrWlz1vX5c.jpg?size=982x216&quality=96&sign=9afe1b67d24a668c8d6ec46a2761b2b0&type=album "2")
+#### Поле заголовков:
+- В поле заголовка вы записываете заголовок слайда.
 
-- Примеры
-    - Обычное предложение: `Nearly all Markdown applications support the basic syntax outlined in the original Markdown design document.`
-    - 2 Предложения: `Nearly all Markdown applications support the basic syntax outlined in the original Markdown design document. There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.`
+![2](https://sun9-88.userapi.com/impg/FWg4Lj5mZ4rigix8JYw0Ht_KbR1VBW6Fydk9AA/_W3FX2kfJto.jpg?size=1066x121&quality=96&sign=82fa86c7585d2ed197914ac2ca7c651e&type=album "2")
 
-Изображения
--  Для вставки изображения используется url,
-на каждом слайде обязательное нахождение изображения.
+#### Текст:
+- Поле для вставки текста.
+
+![3](https://sun9-72.userapi.com/impg/0vtf0f4I8Vib_s2kOkw1xwDaIWuGlOCJFvVJfA/JgWSL07jwf0.jpg?size=1156x173&quality=96&sign=0b52f8e75bb47c787c5cfb388ace67ce&type=album "3")
+
+#### Изображения:
+-  Для вставки изображения используется url.
 - Советую использовать короткие url, url-ы разделяются точками с запятой.
 
-![3](https://sun9-4.userapi.com/impg/FckHsXQqHtp0ezc2hI4YAV5dnQCU0i5Em9iW2Q/FD-R78Q4oFg.jpg?size=927x213&quality=96&sign=8d8bd6e3ffb12d34d29072550f2d0426&type=album "3")
+![4](https://sun9-61.userapi.com/impg/6Q_Gb_FDDGYm6Drr1FZfQDlOSuqLQXfKXB1PbQ/RTQWhGLy0Q4.jpg?size=1030x175&quality=96&sign=0d144b2b02b233f8a6353cf5f7c4f98d&type=album "4")
 
 - Примеры
-    - Одно изображение: `https://example.ru/one.jpg` 
-    - Два изображения, по одному на каждый слайд:  `https://example.ru/one.jpg;https://example.ru/two.jpg`
+    - `https://example.ru/one.jpg` 
 
-- Сохранение
-    - После заполнения формы нажмите кнопку подтверждения, сохраняется по пути **`./storage/app.pptx`**
+#### Добавление слайдов:
+- Кнопка для добавления слайда:
+![5](https://sun9-39.userapi.com/impg/YMt6sJ8zuq49ASiv0EObjWYb4-VxJ5Lkjv8BlA/YPCSvhkiybE.jpg?size=642x200&quality=96&sign=c0b81664be485e894286101e5b511e85&type=album "5")
 
-# В процессе будет выбор колличества изображений на одном слайде,
-- ### добавление изображений с локальных данных,
-- ### рефакторинг и улучшение кода.
+####  Сохранение:
+-  После заполнения нужного вам количества, нажмите кнопку 'Создать'
+-  ![5](https://sun9-32.userapi.com/impg/fkakL_6pUYyfYaih9lbevpYHE3NjilUcUOWGbQ/lHnz62qHA_k.jpg?size=1205x251&quality=96&sign=8909cec81a87c8efb66c713808734e50&type=album "5")
+-  Если все прошло успешно появится кнопка 'Загрузить'

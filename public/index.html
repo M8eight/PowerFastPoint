@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Power Point Factory</title>
     <meta charset="utf-8" />
@@ -10,33 +11,60 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <h1 class="text-center">Power Point Factory</h1>
-                <form name="parseBook">
-                    <input placeholder="Headers" class="form-control" aria-label="Headers" type="text" name="headersList" /> <br>
-                    <textarea placeholder="Text" class="form-control" aria-label="Text" cols="30" rows="5" name="textsList"></textarea> <br> 
-                    <textarea placeholder="Urls" class="form-control" aria-label="Urls" cols="30" rows="5" type="text" name="urlsList"></textarea> <br>
-                    <row>
-                    </row>
-                </form>
+    <h1 class="text-center">Power Point Factory</h1>
+
+    <div class="container" id="mainContainerSlide">
+        <h4 class="text-center">Slides created: <span id="countSlide">1</span></h4>
+
+
+
+    </div>
+
+    <div class="row g-0 mb-2 ">
+        <div class="col-1"></div>
+
+        <div class="col">
+            <div class="d-grid gap-2">
+                <button id="addSlideForm" class="btn btn-primary mr-1" type="button"><span>Add one slide</span></button>
             </div>
-            <div class="col-2"></div>
         </div>
 
-        <br>
+        <div class="col-1" style="width: 20px;"></div>
 
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div id="stateContainer"></div>
+
+        <div class="col">
+            <div class="d-grid gap-2">
+                <button id="submit" class="btn btn-success ml-1" type="button">
+                    Create
+                </button>
             </div>
+        </div>
+
+        <div class="col-1"></div>
+    </div>
+
+
+    <div class="row g-0">
+        <div class="col-2"></div>
+        <div class="col-8" id="downloadPlace">
+
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+
+    <div class="row g-0 justify-content-center">
+        <div class="col-12">
+            <div id="stateContainer"></div>
         </div>
     </div>
 
-    <script src="ajaxPostRequest.js"></script>
+    <script defer src="addSlideElements.js"></script>
+    <script defer src="ajaxPostRequest.js"></script>
+
 </body>
 <html>
