@@ -1,3 +1,7 @@
 .borderBox {
     border: 2px solid blue;
 }
+
+.col-min-padding {
+    width: 20px;
+}
