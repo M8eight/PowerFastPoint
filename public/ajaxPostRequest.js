@@ -46,7 +46,7 @@ $("#submit").click(function (button) {
         url: "/request",
         data: jsonDataToString,
         dataType: "json",
-        headers: { "Content-Type": "application/json" }
+        headers: { 'Content-Type': 'application/json' }
     }).done(function (response) {
         const serverResponse = response.condition;
 
